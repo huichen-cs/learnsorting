@@ -12,6 +12,8 @@ def bubble_sort(data_list):
     This implementation does change the input argument (data_list).
     '''
     data = data_list
+    draw_bubbles(data, None, None)
+    pyplot.pause(3)
     for num_elems in range(len(data)-1, 0, -1):
         # bubble the greatest element up
         for i in range(num_elems):
@@ -57,7 +59,7 @@ def draw_bubbles(data_list, num_elems, bubble_idx):
     pyplot.axis('off')
 
     if not num_elems is None:
-        pyplot.pause(0.1)
+        pyplot.pause(1)
     
 
 
